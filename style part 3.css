@@ -1,0 +1,81 @@
+/* General setup */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+  font-family: 'YourSerifFont', serif; /* Replace 'YourSerifFont' with your chosen serif font */
+  font-size: 10px; /* Set site-wide font-size */
+  line-height: 1.6; /* Set suitable line-height for body text */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'YourSansSerifFont', sans-serif; /* Replace 'YourSansSerifFont' with your chosen sans-serif font */
+  letter-spacing: 1px; /* Add letter-spacing to headings */
+}
+
+h1 {
+  text-align: center; /* Center top level heading */
+}
+
+p {
+  letter-spacing: 0.5px; /* Add letter-spacing to paragraphs */
+  word-spacing: 1px; /* Add word-spacing to paragraphs */
+}
+
+section p:first-of-type, aside p:first-of-type {
+  text-indent: 20px; /* Add text-indentation to the first paragraph after each heading */
+}
+
+/* Links */
+a, a:visited {
+  color: #336699; /* Set color for links */
+  text-decoration: underline; /* Underline links by default */
+}
+
+a:focus, a:hover {
+  text-decoration: none; /* Remove underline on hover/focus */
+}
+
+a:focus {
+  outline: none; /* Remove default focus outline */
+}
+
+a:hover, a:focus {
+  color: #cc0000; /* Change color on hover/focus */
+}
+
+/* External links */
+a[href^="http"]:after {
+  content: "\2197"; /* Add external link icon */
+  margin-left: 3px;
+}
+
+/* Lists */
+ul, ol {
+  margin-top: 10px; /* Set spacing at the top of lists */
+  margin-bottom: 10px; /* Set spacing at the bottom of lists */
+}
+
+li {
+  line-height: 1.6; /* Set line-height for list items */
+  list-style-type: disc; /* Use disc as bullet style for unordered lists */
+}
+
+nav ul {
+  list-style-type: none; /* Remove default list style for navigation menu */
+  padding: 0; /* Remove default padding */
+}
+
+nav li {
+  margin-bottom: 10px; /* Add spacing between navigation items */
+}
+
+/* Navigation menu */
+nav {
+  height: 100%; /* Ensure navigation menu fills vertical space */
+  background-color: #f2f2f2; /* Set background color for navigation menu */
+}
